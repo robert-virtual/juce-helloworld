@@ -4,6 +4,7 @@
 MainComponent::MainComponent()
 {
     addAndMakeVisible(toggleBtn);
+    addAndMakeVisible(btnSave);
     setSize (600, 400);
 }
 
@@ -30,4 +31,6 @@ void MainComponent::resized()
     
     // setBounds(x,y,width,height)
     toggleBtn.setBounds(10,10,30,30);
+    btnSave.setBounds(10,50,100,30);
+    btnSave.setButtonText("Save");
 }
